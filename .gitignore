@@ -1,0 +1,12 @@
+venv/
+data/
+data_cic/
+*.db
+alerts_log.csv
+demo_flows.csv
+test_tg.py
+test_discord.py
+Untitled.ipynb
+.ipynb_checkpoints/
+__pycache__/
+*.csv
