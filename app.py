@@ -15,7 +15,9 @@ def load_model():
 
 @st.cache_data
 def load_flows():
-    return pd.read_csv("demo_flows.csv")
+    df = pd.read_csv("demo_flows.csv")
+    df["Timestamp"] = pd.to_datetime(df["Timestamp"], format="%Y-%d-%m %H:%M:%S")
+    return df
 
 model, le, feature_cols = load_model()
 flows = load_flows()
