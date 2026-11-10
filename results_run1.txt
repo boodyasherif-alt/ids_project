@@ -1,0 +1,45 @@
+Accuracy      : 0.9988
+F1 (macro)    : 0.8690
+F1 (weighted) : 0.9988
+Best iteration: 148
+Test rows     : 499,596
+
+Class counts (after cleaning + dedup):
+Label
+BENIGN                        2072252
+DoS Hulk                       172846
+DDoS                           128014
+PortScan                        90694
+DoS GoldenEye                   10282
+FTP-Patator                      5931
+DoS slowloris                    5374
+DoS Slowhttptest                 5228
+SSH-Patator                      3219
+Bot                              1948
+Web Attack - Brute Force         1470
+Web Attack - XSS                  652
+Infiltration                       36
+Web Attack - SQL Injection         21
+Heartbleed                         11
+
+                            precision    recall  f1-score   support
+
+                    BENIGN     0.9999    0.9990    0.9995    414451
+                       Bot     0.7233    0.9718    0.8293       390
+                      DDoS     0.9999    0.9999    0.9999     25603
+             DoS GoldenEye     0.9947    0.9985    0.9966      2056
+                  DoS Hulk     0.9983    0.9997    0.9990     34569
+          DoS Slowhttptest     0.9895    0.9924    0.9909      1046
+             DoS slowloris     0.9935    0.9898    0.9916      1075
+               FTP-Patator     1.0000    1.0000    1.0000      1186
+                Heartbleed     0.5000    1.0000    0.6667         2
+              Infiltration     0.8333    0.7143    0.7692         7
+                  PortScan     0.9893    0.9994    0.9944     18139
+               SSH-Patator     1.0000    1.0000    1.0000       644
+  Web Attack - Brute Force     0.7559    0.7687    0.7622       294
+Web Attack - SQL Injection     0.6667    0.5000    0.5714         4
+          Web Attack - XSS     0.4758    0.4538    0.4646       130
+
+                  accuracy                         0.9988    499596
+                 macro avg     0.8613    0.8925    0.8690    499596
+              weighted avg     0.9989    0.9988    0.9988    499596

@@ -1,0 +1,41 @@
+Accuracy      : 0.9991
+F1 (macro)    : 0.9722
+F1 (weighted) : 0.9991
+Best iteration: 118
+Test rows     : 499,596
+
+Class counts (after cleaning + dedup):
+Label
+BENIGN              2072252
+DoS Hulk             172846
+DDoS                 128014
+PortScan              90694
+DoS GoldenEye         10282
+FTP-Patator            5931
+DoS slowloris          5374
+DoS Slowhttptest       5228
+SSH-Patator            3219
+Web Attack             2143
+Bot                    1948
+Infiltration             36
+Heartbleed               11
+
+                  precision    recall  f1-score   support
+
+          BENIGN     0.9999    0.9991    0.9995    414451
+             Bot     0.7435    0.9537    0.8356       389
+            DDoS     0.9999    0.9999    0.9999     25603
+   DoS GoldenEye     0.9971    0.9971    0.9971      2056
+        DoS Hulk     0.9983    0.9998    0.9991     34569
+DoS Slowhttptest     0.9904    0.9895    0.9900      1046
+   DoS slowloris     0.9925    0.9898    0.9912      1075
+     FTP-Patator     1.0000    1.0000    1.0000      1186
+      Heartbleed     1.0000    1.0000    1.0000         2
+    Infiltration     0.8571    0.8571    0.8571         7
+        PortScan     0.9891    0.9994    0.9943     18139
+     SSH-Patator     1.0000    0.9938    0.9969       644
+      Web Attack     0.9767    0.9790    0.9779       429
+
+        accuracy                         0.9991    499596
+       macro avg     0.9650    0.9814    0.9722    499596
+    weighted avg     0.9991    0.9991    0.9991    499596
